@@ -1,0 +1,26 @@
+/* explor */
+
+.container>div img , .container>div video{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat( 3 , 1fr);
+    grid-template-rows: auto ;
+    gap: 5px;
+}
+.big{
+    grid-row: auto/ span 2;
+    grid-column: auto/span 2;
+}
+
+@media screen and (max-width: 490px ) {
+    .search-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2% auto;
+    }
+}
+/* explor */

@@ -1,0 +1,33 @@
+/* explor */
+.container>div img , .container>div video{
+    height: 100%;
+    width: 100%;
+}
+.container{
+    display: grid;
+    grid-template-columns: repeat( 3 , minmax(100px, 1fr ));
+    grid-template-rows: auto ;
+    gap: 2px;
+    /* grid-auto-flow: dense; */
+    /* grid-auto-rows: 100px; */
+}
+.big {
+  grid-row: auto/ span 2;
+  grid-column: auto/span 2;
+}
+/* .big-2{
+    grid-column:2/4;
+    grid-row: 5/7;
+}
+.big-4{
+    grid-column:2/4;
+    grid-row: 8/10;
+} */
+@media screen and (max-width: 490px ) {
+    .search-box{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 2% auto;
+    }
+}
